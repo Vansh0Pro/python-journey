@@ -1,10 +1,9 @@
 import random
+computer_choice = random.randint(1, 3)
 
 #1=scisors
 #2=paper
 #3=rock
-
-computer_choice = random.randint(1, 3)
 
 print("----------------------------------------------------------------------------------------------------------")
 print("Welcome to Rock, Paper, Scissors!")
