@@ -11,85 +11,18 @@ print("I'm thinking of a number between 1 and 100. u have 10 attempts to guess i
 
 # Your code starts here 👇
 
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
+i=1
 
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
+while i <= 10:
+    guess = int(input(f"Attempt {i}: Make a guess: "))
+    attempts += 1
 
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
+    if guess < secret_number:
+        print("Too low.")
+    elif guess > secret_number:
+        print("Too high.")
+    else:
+        print(f"You got it! The answer was {secret_number}.")
+        break
 
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
-
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
-
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
-
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
-
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
-
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
-
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
-
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-guess = int(input("Make a guess: "))
-print(f"You guessed: {guess}")
-
-if guess == secret_number:
-    print("Congratulations! You guessed the number!")
-else:
-    print("nope, thats a bit too " + ("high" if guess > secret_number else "low") + ".")
-
-print("Game over! You've used all your attempts.")
-print(f"The secret number was: {secret_number}")
+    i += 1
